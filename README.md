@@ -190,25 +190,6 @@ Ensure you have the following:
 ## Commenting Guidelines
 
 To ensure your MATLAB files are properly documented, follow these guidelines:
-
-### File Comments
-- Add `@file` for the filename and `@brief` for a short description at the beginning of the file.
-
-### Class Comments
-- Add `@brief` above the class declaration, explaining its purpose and main details.
-
-### Property Comments
-- Document each property with `%>` above its declaration, specifying its type (public, private, protected, constant).
-
-### Method Comments
-- Use `@brief` to describe the method, `@param` for parameters, and `@retval` for returned values.
-
-### Enumeration Comments
-- Add a description with `%>` above each element.
-
-### Event Comments
-- Document events with `%>` above each declaration.
-
 Below is a table describing how to structure comments in MATLAB files to ensure compatibility with the `m2cpp.pl` script and Doxygen.
 
 | **Code Element**      | **Comment Structure**                                                                                   | **Example**                                                                                                                        |
