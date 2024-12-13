@@ -275,4 +275,12 @@ end
 
 ---
 
-This setup should allow you to generate comprehensive documentation for your MATLAB projects using Doxygen on both Windows and macOS.
+## Acknowledgements
+This project utilizes the `m2cpp.pl` script from the package "Using Doxygen with Matlab" by Fabrice, available on MATLAB Central File Exchange.
+
+Cite as:
+Fabrice (2024). Using Doxygen with Matlab (https://www.mathworks.com/matlabcentral/fileexchange/25925-using-doxygen-with-matlab), MATLAB Central File Exchange. Retrieved December 13, 2024.
+
+---
+
+
