@@ -3,7 +3,7 @@
 # URL: https://www.mathworks.com/matlabcentral/fileexchange/25925-using-doxygen-with-matlab
 
 
-
+# CHANGE THE FOLLOWING PATH:
 #!/usr/local/bin/perl
 if ($#ARGV != 0)
 {
