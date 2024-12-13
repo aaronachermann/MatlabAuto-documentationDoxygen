@@ -209,6 +209,28 @@ To ensure your MATLAB files are properly documented, follow these guidelines:
 ### Event Comments
 - Document events with `%>` above each declaration.
 
+Below is a table describing how to structure comments in MATLAB files to ensure compatibility with the `m2cpp.pl` script and Doxygen.
+
+| **Code Element**      | **Comment Structure**                                                                                   | **Example**                                                                                                                        |
+|------------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| **File**              | Use `@file` for the filename and `@brief` for a short description.                                     | ```matlab %> @file FileName.m %> @brief Short description of the file. %> Additional details if necessary. ```                     |
+| **Class**             | Add `@brief` above the class declaration, explaining its purpose.                                      | ```matlab %> @brief Description of the class. %> Additional details about its functionality. classdef MyClass ```                 |
+| **Public Properties** | Use `%>` above the property to describe it.                                                           | ```matlab properties (Access = public) %> Description of the public property publicProperty end ```                                |
+| **Constant Properties**| Specify the property as constant and describe it with `%>`.                                          | ```matlab properties (Constant = true) %> Description of a constant property constantProperty = 42; end ```                        |
+| **Method**            | Use `@brief` for a short description, `@param` for parameters, and `@retval` for return values.        | ```matlab %> @brief Short description of the method. %> Detailed explanation. %> @param input Description of the input parameter. %> @retval output Description of the output value. function output = exampleMethod(obj, input) end ``` |
+| **Enumerations**      | Use `%>` above each enumeration element for its description.                                           | ```matlab enumeration %> Description of the first element FirstElement %> Description of the second element SecondElement end ``` |
+| **Events**            | Use `%>` to describe each event declared in the class.                                                | ```matlab events %> Description of the first event FirstEvent %> Description of the second event SecondEvent end ```               |
+| **Static/Protected Methods** | Indicate the accessibility of the method and use `@brief`, `@param`, and `@retval` as for regular methods. | ```matlab methods (Static, Access = protected) %> @brief Static and protected method. %> Detailed explanation. %> @param input Description of the parameter. %> @retval output Return value. function output = exampleStaticMethod(input) end end ``` |
+| **Abstract Methods**  | Add a description to the abstract method and specify parameters and return values.                     | ```matlab methods (Abstract = true) %> @brief Abstract method. %> Only the signature is declared. %> @param input Description of the parameter. %> @retval output Return value. output = abstractMethod(input); end ``` |
+
+---
+
+### General Rules:
+1. **Consistency**: Always follow a consistent commenting style across all MATLAB files.
+2. **Clarity**: Ensure comments are clear, concise, and professional.
+3. **Mandatory Fields**: Always include `@brief`, and when applicable, use `@param`, `@retval`, and `%>`.
+
+
 ---
 
 ### Example
