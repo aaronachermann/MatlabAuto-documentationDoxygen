@@ -154,11 +154,15 @@ Ensure you have the following:
    ```perl
    #! [path_of_perl(look_above)]
    ```
+   example: #!/usr/local/bin/perl
+
 
    ### **macOS**
    ```perl
    #![path_of_perl(look_above)]
    ```
+   example: #!/usr/local/bin/perl
+
 3. Save and close the file.
 
 ---
@@ -209,7 +213,7 @@ To ensure your MATLAB files are properly documented, follow these guidelines:
 
 ### Example
 
-#### Input
+#### Wrong Comments
 ```matlab
 classdef MyClass
 properties
@@ -223,7 +227,7 @@ end
 end
 ```
 
-#### Output
+#### Right Comments
 ```matlab
 %> @file MyClass.m
 %> @brief Example class demonstrating documentation style.
