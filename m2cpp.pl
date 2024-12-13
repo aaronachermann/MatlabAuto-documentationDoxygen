@@ -1,3 +1,9 @@
+# This script is part of the package "Using Doxygen with Matlab"
+# by Fabrice (2024), retrieved from MATLAB Central File Exchange.
+# URL: https://www.mathworks.com/matlabcentral/fileexchange/25925-using-doxygen-with-matlab
+
+
+
 #!/usr/local/bin/perl
 if ($#ARGV != 0)
 {
