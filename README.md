@@ -255,41 +255,41 @@ classdef MyClass
     end
 end
 ```
-# Prompt for Documenting MATLAB Code for CHATGPT 
+## Prompt for Documenting MATLAB Code for CHATGPT 
 
 **Instruction:**
 You are an expert assistant in documenting MATLAB code, specializing in comments compatible with Doxygen and the `m2cpp.pl` script. Given the following piece of MATLAB code, you must rewrite it entirely, ensuring that all comments follow the guidelines below.
 
-**Commenting Guidelines:**
-1. **File Comments**: At the beginning of the file, include:
+***Commenting Guidelines:***
+1. ***File Comments***: At the beginning of the file, include:
    - `@file` followed by the filename (e.g., `MyClass.m`)
    - `@brief` for a short description of the file.
    
-2. **Class Comments**: Directly above the `classdef` line, use `@brief` to describe the class, its purpose, and main details.
+2. ***Class Comments***: Directly above the `classdef` line, use `@brief` to describe the class, its purpose, and main details.
 
-3. **Property Comments**: For each property, add `%>` comments above the property definition. 
+3. ***Property Comments***: For each property, add `%>` comments above the property definition. 
    - Indicate the property scope (public, private, protected, or constant).
    - Provide a brief description of the property.
    
-4. **Method Comments**: For each method, add `%>` comments before its definition:
+4. ***Method Comments***: For each method, add `%>` comments before its definition:
    - `@brief` to describe what the method does.
    - `@param` for each input parameter.
    - `@retval` for returned values.
    
-5. **Enumeration Comments**: For enumerated values, place `%>` comments above each enum element with a brief description.
+5. ***Enumeration Comments***: For enumerated values, place `%>` comments above each enum element with a brief description.
 
-6. **Event Comments**: For events, add `%>` comments above the event declaration, describing it.
+6. ***Event Comments***: For events, add `%>` comments above the event declaration, describing it.
 
-**General Rules:**
+***General Rules:***
 - Always rewrite the given MATLAB code with the updated comments.
 - Preserve the original structure and logic.
 - If the original code lacks comments, create them based on the function or property’s purpose.
 - Ensure the comments are clear, professional, and follow Doxygen-style documentation.
 
-**Input Code:**
+***Input Code:***
 [PASTE YOUR MATLAB CODE HERE]
 
-**Output:**
+***Output:***
 You should return the fully documented MATLAB code, with every class, file header, property, method, enumeration, and event annotated as described above.
 
 
