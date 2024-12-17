@@ -165,7 +165,7 @@ To ensure that Doxygen is accessible from the command line on Windows, follow th
      HAVE_DOT = YES
      DOT_PATH = path/to/graphviz/bin
      ```
-   - Modify the following settings to include more detailed documentation:
+   - Modify the following settings to include more detailed documentation (only if lines are present):
      ```plaintext
      EXTRACT_ALL = YES
      EXTRACT_STATIC = YES
