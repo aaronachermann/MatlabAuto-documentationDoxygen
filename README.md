@@ -78,7 +78,7 @@ To ensure that Doxygen is accessible from the command line on Windows, follow th
 ### **Windows**
 
 1. Download and install Strawberry Perl from [Strawberry Perl's website](https://strawberryperl.com/).
-2. Ensure that the Perl binary is added to your system PATH during installation.
+2. Ensure that the Perl binary is added to your system PATH during installation (same as for Doxygen).
 3. Find the Perl path by running:
    ```cmd
    where perl
