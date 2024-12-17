@@ -20,10 +20,41 @@ Ensure you have the following:
 1. Download the latest version of Doxygen from [Doxygen's official website](https://www.doxygen.nl/download.html).
 2. Run the installer and follow the setup instructions.
 3. During installation, ensure the option **"Add doxygen to the system PATH for all users"** is selected.
-4. Verify the installation:
-   ```cmd
+   ### Adding Doxygen to PATH on Windows
+
+To ensure that Doxygen is accessible from the command line on Windows, follow these steps to add its installation directory to your system's PATH environment variable.
+
+### Locate the Doxygen Installation Directory
+1. By default, Doxygen is installed in:
+   ```
+   C:\Program Files\doxygen\bin
+   ```
+2. Verify that this directory contains the executable file `doxygen.exe`.
+
+### Add Doxygen to the System PATH
+1. Press **Win + R**, type `control`, and press **Enter** to open the Control Panel.
+2. Navigate to:
+   - **System and Security > System > Advanced system settings**.
+3. In the **Advanced** tab, click on **Environment Variables**.
+4. Under **System variables**, locate the **Path** variable and click **Edit**.
+5. Click **New** and add the following path:
+   ```
+   C:\Program Files\doxygen\bin
+   ```
+6. Click **OK** to save the changes and close all dialogs.
+
+### Verify the Configuration
+1. Close and reopen the **Command Prompt**.
+2. Run the following command to verify the installation:
+   ```
    doxygen --version
    ```
+   or
+   ```
+   Doxygen --version
+   ```
+4. If the installation is successful, the installed version of Doxygen will be displayed.
+
 
 ### **macOS**
 
